@@ -1,0 +1,31 @@
+.community {
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    @include flex(row, space-between, center);
+    @media (max-width: 415px) {
+        @include flex(column, center, center);
+    }
+    .com-formed{
+        flex: 2;
+        h2{
+            font-size: 4.5rem;
+        }
+        p{
+            color: gray;
+        }
+    }
+    .com-messages{
+        flex: 1;
+        @media (max-width: 415px) {
+            padding-top: 7rem;
+        }
+        h2{
+            font-size: 4.5rem;
+        }
+        p{
+            color: gray;
+            padding-left: 35px;
+        }
+    }
+}

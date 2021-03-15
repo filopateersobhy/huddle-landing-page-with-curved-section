@@ -1,0 +1,167 @@
+header{
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    padding-top: 2rem;
+    nav{
+        @include flex(row, space-betwwen, center);
+        .logo{
+            flex: 5;
+            @media (max-width: 415px) {
+                flex: 1;
+            }
+            img{
+                width: 25%;
+                @media (max-width: 1440px) {
+                    width: 25%;
+                }
+                @media (max-width: 415px) {
+                    width: 93%;
+                }
+            }
+        }
+        .btn{
+            flex: 1;
+            padding-left: 34rem;
+            @media (max-width: 1440px) {
+                padding-left: 34rem;
+            }
+            @media (max-width: 1025px) {
+                padding-left: 11rem;
+            }
+            @media (max-width: 768px) {
+                padding-left: 0rem;
+            }
+            @media (max-width: 415px) {
+                padding-left: 7rem;
+            }
+            @media (max-width: 376px) {
+                padding-left: 5rem;
+            }
+            .btn-1{
+                flex: 1;
+                background-color: transparent;
+                padding: 7px 30px;
+                @media (max-width: 1440px) {
+                    padding: 7px 30px;  
+                }
+                @media (max-width: 769px) {
+                    padding: 7px 26px;
+                }
+                @media (max-width: 415px) {
+                    padding: 5px 24px;
+                }
+                border-radius: 28px;
+                font-size: 14px;
+                border: 1px solid $pink;
+                color: $pink;
+                cursor: pointer;
+                
+                &:hover{
+                    border: 1px solid $lightpink;
+                }
+            }
+        }
+       
+    }
+}
+
+.home{
+    width: 80%;
+    margin: auto;
+    @include flex(column, center, center);
+    padding-top: 4rem;
+    @media (max-width: 1440px) {
+        padding-top: 4rem;   
+    }
+    .home-text{
+        flex: 1;
+        @include flex(column, center, center);
+        text-align: center;
+        h2{
+            padding-top: 4rem;
+            font-size: 3.2rem;
+            color: $DarkCyan;
+            @media (max-width: 1440px) {
+                font-size: 3.2rem;
+            }
+            @media (max-width: 1026px) {
+                font-size: 2.4rem;
+            }
+            @media (max-width: 769px) {
+                font-size: 1.8rem;
+            }
+            @media (max-width: 415px) {
+                font-size: 29px;
+            }
+            @media (max-width: 376px) {
+                font-size: 27px;
+            }
+        }
+        p{
+            color: $DarkCyan;
+            font-size: 23px;
+            width: 59%;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            font-weight: 400;
+            @media (max-width: 1440px) {
+                font-size: 22px;
+                 width: 59%;
+            }
+            @media (max-width: 1026px) {
+                font-size: 18px;
+                width: 65%;
+            }
+            @media (max-width: 769px) {
+                font-size: 13px;
+                width: 64%;
+            }
+            @media (max-width: 415px) {
+                font-size: 15px;
+                width: 100%;
+            }
+            @media (max-width: 376px) {
+                font-size: 14px;
+                padding-bottom: 2.3rem;
+                width: 100%;
+            }
+        }
+        .btn-2{
+            
+                    padding: 23px 120px;
+                    border-radius: 35px;
+                    border: none;
+                    background-color: $pink;
+                    color: white;
+                    outline: none;
+                    font-size: 20px;
+                    cursor: pointer;
+                    @media (max-width: 1024px) {
+                        padding: 15px 73px;
+                    }
+                    @media (max-width: 768px) {
+                        padding: 15px 61px;
+                        font-size: 15px;
+                    }
+                    @media (max-width: 415px) {
+                        padding: 15px 38px;
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        background-color: $lightpink;
+                    }
+        }
+    }
+    .home-img {
+        width: 100%;
+        text-align: center;
+        padding-top: 4rem;
+        @media (max-width: 1440px) {
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.build {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 15rem;
+    h2 {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        @media (max-width: 1024px) {
+            font-size: 1.8rem;
+        }
+        @media (max-width: 768px) {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 415px) {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 376px) {
+            font-size: 1.1rem;
+        }
+    }
+    .btn-3{
+        padding: 23px 120px;
+                    border-radius: 35px;
+                    border: none;
+                    background-color: $pink;
+                    color: white;
+                    outline: none;
+                    font-size: 20px;
+                    cursor: pointer;
+                    @media (max-width: 1024px) {
+                        padding: 15px 73px;
+                    }
+                    @media (max-width: 768px) {
+                        padding: 15px 61px;
+                        font-size: 15px;
+                    }
+                    @media (max-width: 415px) {
+                        padding: 15px 26px;
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        background-color: $lightpink;
+                    }
+    }
+}
